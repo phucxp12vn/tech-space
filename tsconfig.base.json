@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tech-space/ui": ["packages/ui/src/index.ts"],
+      "@tech-space-ui/*": ["packages/ui/src/*"],
+      "@tech-space-images/*": ["packages/ui/src/assets/images/*"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

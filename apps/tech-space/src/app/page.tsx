@@ -1,3 +1,5 @@
+import { Button } from '@tech-space/ui';
+
 export default function Index() {
   /*
    * Replace the elements below with your own.
@@ -6,6 +8,11 @@ export default function Index() {
    */
   return (
     <div>
+      <Button
+        label="Button"
+        link="/"
+        customClasses="border border-primary text-primary rounded-[5px] px-10 py-3.5 lg:px-8 xl:px-10"
+      />
       <div className="wrapper">
         <div className="container">
           <div id="welcome">

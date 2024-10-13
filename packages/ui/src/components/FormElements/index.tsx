@@ -1,18 +1,18 @@
-"use client";
-import Breadcrumb from "@tech-space-ui/components/Breadcrumbs/Breadcrumb";
-import CheckboxFive from "@tech-space-ui/components/FormElements/Checkboxes/CheckboxFive";
-import CheckboxFour from "@tech-space-ui/components/FormElements/Checkboxes/CheckboxFour";
-import CheckboxOne from "@tech-space-ui/components/FormElements/Checkboxes/CheckboxOne";
-import CheckboxThree from "@tech-space-ui/components/FormElements/Checkboxes/CheckboxThree";
-import CheckboxTwo from "@tech-space-ui/components/FormElements/Checkboxes/CheckboxTwo";
-import SwitcherFour from "@tech-space-ui/components/FormElements/Switchers/SwitcherFour";
-import SwitcherOne from "@tech-space-ui/components/FormElements/Switchers/SwitcherOne";
-import SwitcherThree from "@tech-space-ui/components/FormElements/Switchers/SwitcherThree";
-import SwitcherTwo from "@tech-space-ui/components/FormElements/Switchers/SwitcherTwo";
-import DatePickerTwo from "@tech-space-ui/components/FormElements/DatePicker/DatePickerTwo";
-import DatePickerOne from "@tech-space-ui/components/FormElements/DatePicker/DatePickerOne";
-import MultiSelect from "@tech-space-ui/components/FormElements/MultiSelect";
-import SelectGroupTwo from "@tech-space-ui/components/FormElements/SelectGroup/SelectGroupTwo";
+'use client';
+import Breadcrumb from '../Breadcrumbs/Breadcrumb';
+import CheckboxFive from '../FormElements/Checkboxes/CheckboxFive';
+import CheckboxFour from '../FormElements/Checkboxes/CheckboxFour';
+import CheckboxOne from '../FormElements/Checkboxes/CheckboxOne';
+import CheckboxThree from '../FormElements/Checkboxes/CheckboxThree';
+import CheckboxTwo from '../FormElements/Checkboxes/CheckboxTwo';
+import SwitcherFour from '../FormElements/Switchers/SwitcherFour';
+import SwitcherOne from '../FormElements/Switchers/SwitcherOne';
+import SwitcherThree from '../FormElements/Switchers/SwitcherThree';
+import SwitcherTwo from '../FormElements/Switchers/SwitcherTwo';
+import DatePickerTwo from '../FormElements/DatePicker/DatePickerTwo';
+import DatePickerOne from '../FormElements/DatePicker/DatePickerOne';
+import MultiSelect from '../FormElements/MultiSelect';
+import SelectGroupTwo from '../FormElements/SelectGroup/SelectGroupTwo';
 
 const FormElements = () => {
   return (

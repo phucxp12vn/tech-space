@@ -1,15 +1,14 @@
-"use client";
+'use client';
 
-import React from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
-import SidebarItem from "@tech-space-ui/components/Sidebar/SidebarItem";
-import ClickOutside from "@tech-space-ui/components/ClickOutside";
-import useLocalStorage from "@tech-space-ui/hooks/useLocalStorage";
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import SidebarItem from '../Sidebar/SidebarItem';
+import ClickOutside from '../ClickOutside';
+import useLocalStorage from '../../hooks/useLocalStorage';
 
-import LogoDark from '../../assets/images/logo/logo-dark.svg'
-import Logo from '../../assets/images/logo/logo.svg'
+import LogoDark from '../../assets/images/logo/logo-dark.svg';
+import Logo from '../../assets/images/logo/logo.svg';
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -18,7 +17,7 @@ interface SidebarProps {
 
 const menuGroups = [
   {
-    name: "MAIN MENU",
+    name: 'MAIN MENU',
     menuItems: [
       {
         icon: (
@@ -42,11 +41,9 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Dashboard",
-        route: "#",
-        children: [
-          { label: "eCommerce", route: "/" },
-        ],
+        label: 'Dashboard',
+        route: '#',
+        children: [{ label: 'eCommerce', route: '/' }],
       },
       {
         icon: (
@@ -90,8 +87,8 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Calendar",
-        route: "/calendar",
+        label: 'Calendar',
+        route: '/calendar',
       },
       {
         icon: (
@@ -117,8 +114,8 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Profile",
-        route: "/profile",
+        label: 'Profile',
+        route: '/profile',
       },
       {
         icon: (
@@ -138,11 +135,11 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Forms",
-        route: "#",
+        label: 'Forms',
+        route: '#',
         children: [
-          { label: "Form Elements", route: "/forms/form-elements" },
-          { label: "Form Layout", route: "/forms/form-layout" },
+          { label: 'Form Elements', route: '/forms/form-elements' },
+          { label: 'Form Layout', route: '/forms/form-layout' },
         ],
       },
       {
@@ -163,11 +160,9 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Tables",
-        route: "#",
-        children: [
-          { label: "Tables", route: "/tables" },
-        ],
+        label: 'Tables',
+        route: '#',
+        children: [{ label: 'Tables', route: '/tables' }],
       },
       {
         icon: (
@@ -187,16 +182,14 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Pages",
-        route: "#",
-        children: [
-          { label: "Settings", route: "/pages/settings" },
-        ],
+        label: 'Pages',
+        route: '#',
+        children: [{ label: 'Settings', route: '/pages/settings' }],
       },
     ],
   },
   {
-    name: "OTHERS",
+    name: 'OTHERS',
     menuItems: [
       {
         icon: (
@@ -220,11 +213,9 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Charts",
-        route: "#",
-        children: [
-          { label: "Basic Chart", route: "/charts/basic-chart" },
-        ],
+        label: 'Charts',
+        route: '#',
+        children: [{ label: 'Basic Chart', route: '/charts/basic-chart' }],
       },
       {
         icon: (
@@ -262,11 +253,11 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "UI Elements",
-        route: "#",
+        label: 'UI Elements',
+        route: '#',
         children: [
-          { label: "Alerts", route: "/ui-elements/alerts" },
-          { label: "Buttons", route: "/ui-elements/buttons" },
+          { label: 'Alerts', route: '/ui-elements/alerts' },
+          { label: 'Buttons', route: '/ui-elements/buttons' },
         ],
       },
       {
@@ -289,11 +280,9 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Authentication",
-        route: "#",
-        children: [
-          { label: "Sign In", route: "/auth/signin" },
-        ],
+        label: 'Authentication',
+        route: '#',
+        children: [{ label: 'Sign In', route: '/auth/signin' }],
       },
     ],
   },
@@ -302,15 +291,15 @@ const menuGroups = [
 const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   const pathname = usePathname();
 
-  const [pageName, setPageName] = useLocalStorage("selectedMenu", "dashboard");
+  const [pageName, setPageName] = useLocalStorage('selectedMenu', 'dashboard');
 
   return (
     <ClickOutside onClick={() => setSidebarOpen(false)}>
       <aside
         className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden border-r border-stroke bg-white dark:border-stroke-dark dark:bg-gray-dark lg:static lg:translate-x-0 ${
           sidebarOpen
-            ? "translate-x-0 duration-300 ease-linear"
-            : "-translate-x-full"
+            ? 'translate-x-0 duration-300 ease-linear'
+            : '-translate-x-full'
         }`}
       >
         {/* <!-- SIDEBAR HEADER --> */}
@@ -323,7 +312,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               alt="Logo"
               priority
               className="dark:hidden"
-              style={{ width: "auto", height: "auto" }}
+              style={{ width: 'auto', height: 'auto' }}
             />
             <Image
               width={176}
@@ -332,7 +321,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               alt="Logo"
               priority
               className="hidden dark:block"
-              style={{ width: "auto", height: "auto" }}
+              style={{ width: 'auto', height: 'auto' }}
             />
           </Link>
 

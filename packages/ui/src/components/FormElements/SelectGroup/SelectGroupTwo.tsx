@@ -1,8 +1,8 @@
-"use client";
-import React, { useState } from "react";
+'use client';
+import React, { useState } from 'react';
 
 const SelectGroupTwo: React.FC = () => {
-  const [selectedOption, setSelectedOption] = useState<string>("");
+  const [selectedOption, setSelectedOption] = useState<string>('');
   const [isOptionSelected, setIsOptionSelected] = useState<boolean>(false);
 
   const changeTextColor = () => {
@@ -45,7 +45,7 @@ const SelectGroupTwo: React.FC = () => {
             changeTextColor();
           }}
           className={`relative z-10 w-full appearance-none rounded-[7px] border border-stroke bg-transparent px-11.5 py-3 outline-none transition focus:border-primary active:border-primary dark:border-dark-3 dark:bg-dark-2 ${
-            isOptionSelected ? "text-dark dark:text-white" : ""
+            isOptionSelected ? 'text-dark dark:text-white' : ''
           }`}
         >
           <option value="UnitedStates" className="text-dark-5 dark:text-dark-6">

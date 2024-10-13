@@ -1,7 +1,7 @@
-"use client";
-import React, { useState, ReactNode } from "react";
-import Sidebar from "@tech-space-ui/components/Sidebar";
-import Header from "@tech-space-ui/components/Header";
+'use client';
+import React, { useState } from 'react';
+import Sidebar from '../Sidebar';
+import Header from '../Header';
 
 export default function DefaultLayout({
   children,

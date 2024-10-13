@@ -1,35 +1,35 @@
-"use client"
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
-import ClickOutside from "@tech-space-ui/components/ClickOutside";
-import Image from "next/image";
+import { useState } from 'react';
+import Link from 'next/link';
+import ClickOutside from '../ClickOutside';
+import Image from 'next/image';
 
 const notificationList = [
   {
-    image: "/images/user/user-15.png",
-    title: "Piter Joined the Team!",
-    subTitle: "Congratulate him",
+    image: '/images/user/user-15.png',
+    title: 'Piter Joined the Team!',
+    subTitle: 'Congratulate him',
   },
   {
-    image: "/images/user/user-02.png",
-    title: "New message received",
-    subTitle: "Devid sent you new message",
+    image: '/images/user/user-02.png',
+    title: 'New message received',
+    subTitle: 'Devid sent you new message',
   },
   {
-    image: "/images/user/user-26.png",
-    title: "New Payment received",
-    subTitle: "Check your earnings",
+    image: '/images/user/user-26.png',
+    title: 'New Payment received',
+    subTitle: 'Check your earnings',
   },
   {
-    image: "/images/user/user-28.png",
-    title: "Jolly completed tasks",
-    subTitle: "Assign her newtasks",
+    image: '/images/user/user-28.png',
+    title: 'Jolly completed tasks',
+    subTitle: 'Assign her newtasks',
   },
   {
-    image: "/images/user/user-27.png",
-    title: "Roman Joined the Team!",
-    subTitle: "Congratulate him",
+    image: '/images/user/user-27.png',
+    title: 'Roman Joined the Team!',
+    subTitle: 'Congratulate him',
   },
 ];
 
@@ -38,7 +38,10 @@ const DropdownNotification = () => {
   const [notifying, setNotifying] = useState(true);
 
   return (
-    <ClickOutside onClick={() => setDropdownOpen(false)} className="relative hidden sm:block">
+    <ClickOutside
+      onClick={() => setDropdownOpen(false)}
+      className="relative hidden sm:block"
+    >
       <li>
         <Link
           onClick={() => {
@@ -67,7 +70,7 @@ const DropdownNotification = () => {
 
             <span
               className={`absolute -top-0.5 right-0 z-1 h-2.5 w-2.5 rounded-full border-2 border-gray-2 bg-red-light dark:border-dark-3 ${
-                !notifying ? "hidden" : "inline"
+                !notifying ? 'hidden' : 'inline'
               }`}
             >
               <span className="absolute -z-1 inline-flex h-full w-full animate-ping rounded-full bg-red-light opacity-75"></span>
@@ -101,8 +104,8 @@ const DropdownNotification = () => {
                         height={112}
                         src={item.image}
                         style={{
-                          width: "auto",
-                          height: "auto",
+                          width: 'auto',
+                          height: 'auto',
                         }}
                         alt="User"
                       />

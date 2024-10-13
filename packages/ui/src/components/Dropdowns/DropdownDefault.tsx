@@ -1,5 +1,5 @@
-import { useState } from "react";
-import ClickOutside from "@tech-space-ui/components/ClickOutside";
+import { useState } from 'react';
+import ClickOutside from '../ClickOutside';
 
 const DropdownDefault = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);

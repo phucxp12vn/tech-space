@@ -6,8 +6,8 @@ import ChartTwo from '../Charts/ChartTwo';
 import ChatCard from '../Chat/ChatCard';
 import TableOne from '../Tables/TableOne';
 import MapOne from '../Maps/MapOne';
-import DataStatsOne from '@tech-space-ui/components/DataStats/DataStatsOne';
-import ChartOne from '@tech-space-ui/components/Charts/ChartOne';
+import DataStatsOne from '../DataStats/DataStatsOne';
+import ChartOne from '../Charts/ChartOne';
 
 const ECommerce: React.FC = () => {
   return (

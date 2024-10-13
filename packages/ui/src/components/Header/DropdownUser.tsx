@@ -1,10 +1,10 @@
-"use client"
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import ClickOutside from "@tech-space-ui/components/ClickOutside";
-import User3 from '../../assets/images/user/user-03.png'
+import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import ClickOutside from '../ClickOutside';
+import User3 from '../../assets/images/user/user-03.png';
 
 const DropdownUser = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -22,8 +22,8 @@ const DropdownUser = () => {
             height={112}
             src={User3}
             style={{
-              width: "auto",
-              height: "auto",
+              width: 'auto',
+              height: 'auto',
             }}
             alt="User"
             className="overflow-hidden rounded-full"
@@ -34,7 +34,9 @@ const DropdownUser = () => {
           <span className="hidden lg:block">Jhon Smith</span>
 
           <svg
-            className={`fill-current duration-200 ease-in ${dropdownOpen && "rotate-180"}`}
+            className={`fill-current duration-200 ease-in ${
+              dropdownOpen && 'rotate-180'
+            }`}
             width="20"
             height="20"
             viewBox="0 0 20 20"
@@ -63,8 +65,8 @@ const DropdownUser = () => {
                 height={112}
                 src={User3}
                 style={{
-                  width: "auto",
-                  height: "auto",
+                  width: 'auto',
+                  height: 'auto',
                 }}
                 alt="User"
                 className="overflow-hidden rounded-full"

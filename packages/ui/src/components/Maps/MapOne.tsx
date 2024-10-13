@@ -1,46 +1,46 @@
-"use client";
-import jsVectorMap from "jsvectormap";
-import React, { useEffect } from "react";
-import "../../js/us-aea-en";
+'use client';
+import jsVectorMap from 'jsvectormap';
+import React, { useEffect } from 'react';
+import '../../js/us-aea-en';
 
 const MapOne: React.FC = () => {
   useEffect(() => {
-    const mapElement = document.getElementById("mapOne");
+    const mapElement = document.getElementById('mapOne');
 
     if (!mapElement) {
-      console.error("Map element not found");
+      console.error('Map element not found');
       return;
     }
 
     const vectorMapOne = new jsVectorMap({
-      selector: "#mapOne",
-      map: "us_aea_en",
+      selector: '#mapOne',
+      map: 'us_aea_en',
       zoomButtons: true,
 
       regionStyle: {
         initial: {
-          fill: "#C8D0D8",
+          fill: '#C8D0D8',
         },
         hover: {
           fillOpacity: 1,
-          fill: "#3056D3",
+          fill: '#3056D3',
         },
       },
       regionLabelStyle: {
         initial: {
-          fontFamily: "Satoshi",
-          fontWeight: "semibold",
-          fill: "#fff",
+          fontFamily: 'Satoshi',
+          fontWeight: 'semibold',
+          fill: '#fff',
         },
         hover: {
-          cursor: "pointer",
+          cursor: 'pointer',
         },
       },
 
       labels: {
         regions: {
           render(code: string) {
-            return code.split("-")[1];
+            return code.split('-')[1];
           },
         },
       },
@@ -50,7 +50,7 @@ const MapOne: React.FC = () => {
       if (vectorMapOne) {
         vectorMapOne.destroy();
       } else {
-        console.error("Vector map instance not found during cleanup");
+        console.error('Vector map instance not found during cleanup');
       }
     };
   }, []);

@@ -1,7 +1,15 @@
 import Link from 'next/link';
-import SidebarDropdown from './SidebarDropdown';
 
-const SidebarItem = ({ item, pageName, setPageName }: any) => {
+import SidebarDropdown from './SidebarDropdown';
+import { MenuItem } from '../../types/menu';
+
+interface SidebarItemProps {
+  item: MenuItem;
+  pageName: string;
+  setPageName: (pageName: string) => void;
+}
+
+const SidebarItem = ({ item, pageName, setPageName }: SidebarItemProps) => {
   const handleClick = () => {
     const updatedPageName =
       pageName !== item.label.toLowerCase() ? item.label.toLowerCase() : '';
@@ -21,16 +29,16 @@ const SidebarItem = ({ item, pageName, setPageName }: any) => {
       >
         {item.icon}
         {item.label}
-        {item.message && (
+        {/* {item.message && (
           <span className="absolute right-11.5 top-1/2 -translate-y-1/2 rounded-full bg-red-light-6 px-1.5 py-px text-[10px] font-medium leading-[17px] text-red">
             {item.message}
           </span>
-        )}
-        {item.pro && (
+        )} */}
+        {/* {item.pro && (
           <span className="absolute right-3.5 top-1/2 -translate-y-1/2 rounded-md bg-primary px-1.5 py-px text-[10px] font-medium leading-[17px] text-white">
             Pro
           </span>
-        )}
+        )} */}
         {item.children && (
           <svg
             className={`absolute right-3.5 top-1/2 -translate-y-1/2 fill-current ${

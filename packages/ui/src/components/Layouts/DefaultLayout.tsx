@@ -1,12 +1,16 @@
 'use client';
 import React, { useState } from 'react';
+
 import Sidebar from '../Sidebar';
 import Header from '../Header';
+import { MenuGroup } from '../../types/menu';
 
 export default function DefaultLayout({
   children,
+  menuGroups,
 }: {
   children: React.ReactNode;
+  menuGroups: MenuGroup[];
 }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
@@ -14,7 +18,11 @@ export default function DefaultLayout({
       {/* <!-- ===== Page Wrapper Star ===== --> */}
       <div className="flex h-screen overflow-hidden">
         {/* <!-- ===== Sidebar Star ===== --> */}
-        <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+        <Sidebar
+          menuGroups={menuGroups}
+          sidebarOpen={sidebarOpen}
+          setSidebarOpen={setSidebarOpen}
+        />
         {/* <!-- ===== Sidebar End ===== --> */}
 
         {/* <!-- ===== Content Area Star ===== --> */}

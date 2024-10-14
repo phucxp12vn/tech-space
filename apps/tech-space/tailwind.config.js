@@ -13,6 +13,7 @@ module.exports = {
     ),
     ...createGlobPatternsForDependencies(__dirname),
   ],
+  darkMode: baseConfig.darkMode,
   theme: baseConfig?.theme || {},
   plugins: baseConfig?.plugins || {},
 };

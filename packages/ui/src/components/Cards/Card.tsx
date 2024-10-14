@@ -8,7 +8,7 @@ const Card = ({ imageSrc, title, content }: CardItemProps) => {
     <div className="rounded-[10px] bg-white shadow-1 dark:bg-gray-dark dark:shadow-card">
       {imageSrc && (
         <Link className="block px-4 pt-4" href="#">
-          <Image className="hidden dark:block h-[238px] object-cover" src={imageSrc} alt="cards" width="432" height='238'/>
+          <Image className="h-[238px] object-cover" src={imageSrc} alt="cards" width="432" height='238'/>
         </Link>
       )}
       <div className="p-6">

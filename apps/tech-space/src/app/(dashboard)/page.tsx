@@ -43,11 +43,7 @@ export default function Overview() {
           </div>
           <div className="">
             <div className="relative flex">
-              <Button
-                label="View All Missions"
-                link="/"
-                customClasses="inline-flex items-center justify-center gap-2.5 text-center font-medium hover:bg-opacity-90 bg-primary text-white py-[11px] px-6"
-              ></Button>
+              <Button label="View All Missions" />
             </div>
           </div>
         </div>

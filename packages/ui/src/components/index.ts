@@ -5,9 +5,9 @@ export { default as Sidebar } from './Sidebar';
 export { default as SidebarItem } from './Sidebar/SidebarItem';
 export { default as Breadcrumb } from './Breadcrumbs/Breadcrumb';
 export { default as Signin } from './Auth/Signin';
-export { default as Button } from './Buttons/ButtonDefault';
 export { default as Loader } from './common/Loader'
 export { default as ECommerce } from './Dashboard/E-commerce'
 export { default as DataStatsOne } from './DataStats/DataStatsOne';
 export { default as ChartOne } from './Charts/ChartOne';
 export { default as Card } from './Cards/Card';
+export * from './Buttons';

@@ -1,7 +1,10 @@
+"use client";
+import dynamic from "next/dynamic"; 
+
 import { ApexOptions } from "apexcharts";
 import React from "react";
-import ReactApexChart from "react-apexcharts";
 import DefaultSelectOption from "../SelectOption/DefaultSelectOption";
+const ReactApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const ChartThree: React.FC = () => {
   const series = [65, 34, 12, 56];

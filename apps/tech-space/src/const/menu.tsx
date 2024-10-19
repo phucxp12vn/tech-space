@@ -1,7 +1,6 @@
-import { DefaultLayout } from '@tech-space/ui';
 import { MenuGroup } from '@tech-space-ui/types/menu';
 
-const menuGroups: MenuGroup[] = [
+export const menuGroups: MenuGroup[] = [
   {
     name: 'MAIN MENU',
     menuItems: [
@@ -25,7 +24,7 @@ const menuGroups: MenuGroup[] = [
           </svg>
         ),
         label: 'Overview',
-        route: '/',
+        route: '/dashboard',
       },
       {
         icon: (
@@ -52,7 +51,7 @@ const menuGroups: MenuGroup[] = [
           </svg>
         ),
         label: 'Missions',
-        route: '/missions',
+        route: '/dashboard/missions',
       },
       {
         icon: (
@@ -79,16 +78,8 @@ const menuGroups: MenuGroup[] = [
           </svg>
         ),
         label: 'Settings',
-        route: '/settings',
+        route: '/dashboard/settings',
       },
     ],
   },
 ];
-
-export default function DashboardLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return <DefaultLayout menuGroups={menuGroups}>{children}</DefaultLayout>;
-}

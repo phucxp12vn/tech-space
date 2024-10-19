@@ -15,9 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tech-space/ui": ["packages/ui/src/index.ts"],
-      "@tech-space-ui/*": ["packages/ui/src/*"],
       "@tech-space-images/*": ["packages/ui/src/assets/images/*"],
+      "@tech-space-ui/*": ["packages/ui/src/*"],
+      "@tech-space/ui": ["packages/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

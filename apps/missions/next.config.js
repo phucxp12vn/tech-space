@@ -19,9 +19,11 @@ const nextConfig = {
         name: 'missions',
         filename: 'static/chunks/remoteEntry.js',
         remotes: {},
-        extraOptions: {},
+        extraOptions: {
+          automaticAsyncBoundary: true,
+        },
         exposes: {
-          './missions': './src/app',
+          './pages': './src/pages/index.tsx',
         },
         shared: {},
       })
@@ -29,14 +31,6 @@ const nextConfig = {
 
     return config;
   },
-  async rewrites() {
-    return [
-        {
-            source: "/",
-            destination: "http://localhost:3001/ecommerce",
-        },
-    ];
-},
 };
 
 const plugins = [

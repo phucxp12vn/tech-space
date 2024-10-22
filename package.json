@@ -2,7 +2,9 @@
   "name": "@tech-space/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx run-many -t dev"
+  },
   "private": true,
   "dependencies": {
     "@module-federation/nextjs-mf": "^8.6.3",
